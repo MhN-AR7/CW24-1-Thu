@@ -62,4 +62,8 @@ public class LoanServiceImpl extends BaseServiceImpl<Loan> {
 
         loanRepo.update(loan);
     }
+
+    public Long countOfNonReturnedItems(){
+        return new LoanRepoImpl().countOfNonReturnedItems();
+    }
 }

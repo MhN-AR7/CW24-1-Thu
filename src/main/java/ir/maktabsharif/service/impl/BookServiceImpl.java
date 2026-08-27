@@ -19,4 +19,8 @@ public class BookServiceImpl extends BaseServiceImpl<Book> {
     public void validate(Book book) throws BusinessException {
 
     }
+
+    public Book findBookByPublicationYear(int publicationYear){
+        return new BookRepoImpl().findBookByPublicationYear(publicationYear);
+    }
 }

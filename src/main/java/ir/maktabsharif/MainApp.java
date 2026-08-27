@@ -39,5 +39,16 @@ public class MainApp {
         }
 
         loanService.returnItem(loan);
+
+        System.out.println("=========================================");
+
+        System.out.println(bookService.findBookByPublicationYear(1370));
+
+        System.out.println("=========================================");
+
+        System.out.println(memberService.findMemberByName("ha"));
+        System.out.println("=========================================");
+
+        System.out.println("your loan count "+loanService.countOfNonReturnedItems());
     }
 }

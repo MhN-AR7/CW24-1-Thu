@@ -18,4 +18,8 @@ public class MemberServiceImpl extends BaseServiceImpl<Member> {
     public void validate(Member member) throws BusinessException {
 
     }
+
+    public Member findMemberByName(String name){
+        return new MemberRepoImpl().findMemberByName(name);
+    }
 }
