@@ -49,7 +49,7 @@ Then return the item and verify returnDate and status
 Attempting to borrow with a SUSPENDED member should throw an Exception
 
 
-Phase 3: Basic JPQL Queries
+## Phase 3: Basic JPQL Queries
 
 Focus: fundamental entity querying, filtering, and simple aggregation.
 
